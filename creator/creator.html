@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  @@include('meta.include')
+  <link rel="stylesheet" href="[[static]]/page/{{name}}/css/{{name}}.css[[v]]">
+</head>
+<body>
+  <div class="app">
+    <!--标题-->
+    <com-top-title title="${{title}}" home></com-top-title>
+
+
+    <!--返回顶部-->
+    <com-to-top-icon></com-to-top-icon>
+  </div>
+
+  @@include('vendor.include')
+  <script src="[[static]]/page/{{name}}/js/{{name}}.js[[v]]"></script>
+</body>
+</html>

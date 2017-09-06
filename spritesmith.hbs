@@ -1,0 +1,12 @@
+{{#sprites}}
+// {{name}} 图片:
+@mixin i-{{name}}($ratio: 2) {
+  content: '';
+  display: inline-block;
+  width: ({{width}}rem / 100 / $ratio);
+  height: ({{height}}rem / 100 / $ratio);
+  background: url({{escaped_image}}) ({{offset_x}}rem / 100 / $ratio) ({{offset_y}}rem / 100 / $ratio) no-repeat;
+  background-size: ({{total_width}}rem / 100 / $ratio) ({{total_height}}rem / 100 / $ratio);
+}
+
+{{/sprites}}
